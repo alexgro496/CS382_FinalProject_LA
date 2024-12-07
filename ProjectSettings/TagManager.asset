@@ -6,6 +6,12 @@ TagManager:
   tags:
   - Item
   - Cat
+  - MainCharacterSprite
+  - EmeraldStaffObject
+  - CoinObject
+  - DiamondObject
+  - GoldObject
+  - PearlObject
   layers:
   - Default
   - TransparentFX

@@ -8,14 +8,21 @@ public class Scene_3Bto3D_Middle : MonoBehaviour
     public static Vector3 playerPosition;
     
     void OnTriggerEnter(Collider Other){
+        if (Other.CompareTag("Player")) {
         
-        Vector3 pos = transform.position;
-        pos.x = (float)1;
-        pos.y = (float)-3;
-        MainCharacter.S.transform.position = pos;
+        // Vector3 pos = transform.position;
+        // pos.x = (float)1;
+        // pos.y = (float)-2.5;
+        // MainCharacter.S.transform.position = pos;
 
-        SceneManager.LoadScene("__Scene_3d_Maze_TL");
+            SceneManager.LoadScene("__Scene_3d_Maze_TL");
         
-        DontDestroyOnLoad(MainCharacter.S);
+            DontDestroyOnLoad(MainCharacter.S);
+
+            Vector3 pos = transform.position;
+            pos.x = (float)1;
+            pos.y = (float)-2.5;
+            MainCharacter.S.transform.position = pos;
+        }
     }
 }

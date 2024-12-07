@@ -10,14 +10,20 @@ public class Scene_5to6_Transition : MonoBehaviour
 
     void OnTriggerEnter(Collider Other){
         
-        Vector3 pos = transform.position;
-        pos.x = (float)-7.8;
-        pos.y = (float)1;
-        MainCharacter.S.transform.position = pos;
+        if (Other.CompareTag("Player")) {
+            Vector3 pos = transform.position;
+            pos.x = (float)-7.8;
+            pos.y = (float)1;
+            MainCharacter.S.transform.position = pos;
+
+            
         
-        SceneManager.LoadScene("__Scene_6_Defeat");
+            SceneManager.LoadScene("__Scene_6_Defeat");
 
-        DontDestroyOnLoad(MainCharacter.S);
-
+            DontDestroyOnLoad(MainCharacter.S);
+        
+            MainCharacter.S.Scene6Entered = true;
+        
+        }
     }
 }

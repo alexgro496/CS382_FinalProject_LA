@@ -9,7 +9,10 @@ EditorBuildSettings:
     path: Assets/__Scenes/__Scene_0_Start.unity
     guid: 371a7706b976d8942be266d72fbd87eb
   - enabled: 1
-    path: Assets/__Scenes/__Scene_1.unity
+    path: Assets/__Scenes/__Scene_1A.unity
+    guid: 78a92389af9e9c4438f0ba174dba7fcb
+  - enabled: 1
+    path: Assets/__Scenes/__Scene_1B.unity
     guid: 82a4b6ab2b351434c93a7f45b43c3170
   - enabled: 1
     path: Assets/__Scenes/__Scene_2_A.unity
@@ -41,4 +44,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/__Scenes/__Scene_7_Awake.unity
     guid: 106c9ab98a5a3784ab99df29d178577b
+  - enabled: 1
+    path: Assets/__Scenes/__Scene_7_Death.unity
+    guid: f57f2f2ed9fe5934a8c6dbfe06357b14
   m_configObjects: {}
